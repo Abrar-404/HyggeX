@@ -7,6 +7,7 @@ import { IoIosArrowForward } from 'react-icons/io';
 import { MdFullscreen } from 'react-icons/md';
 import logo from '../../assets/hyggex.png';
 import textImg from '../../assets/text.png';
+import { FaPlus } from 'react-icons/fa';
 
 const Relation = () => {
   return (
@@ -112,12 +113,28 @@ const Relation = () => {
         </div>
       </div>
 
-      <div className="flex items-center">
-        <img className="w-[300px] h-[300px]" src={logo} alt="" />
+      <div className="flex justify-between items-center">
+        <div className="flex items-center">
+          <img className="w-[200px] h-[200px]" src={logo} alt="" />
+
+          <div>
+            <h1 className="text-xl font-bold">Published By</h1>
+            <img src={textImg} className="w-[200px] h-[50px]" alt="" />
+          </div>
+        </div>
 
         <div>
-          <h1 className="text-xl font-bold">Published By</h1>
-          <img src={textImg} className="w-[300px] h-[80px]" alt="" />
+          <div className="flex gap-2 items-center">
+            <button className="btn bg-gradient-to-t from-cyan-600 to-blue-900 btn-circle">
+              <h1 className="text-2xl text-white">
+                <FaPlus></FaPlus>
+              </h1>
+            </button>
+
+            <h1 className="text-3xl font-bold text-blue-800">
+              Create Flashcard
+            </h1>
+          </div>
         </div>
       </div>
     </div>
