@@ -6,6 +6,7 @@ import 'react-toastify/dist/ReactToastify.css';
 import { AuthContext } from '../../Components/AuthProvider/AuthProvider';
 import '../../Components/Styles/login.css';
 
+
 // eslint-disable-next-line react-refresh/only-export-components
 const Login = () => {
   const { signInUser, googleSignIn } = useContext(AuthContext);
