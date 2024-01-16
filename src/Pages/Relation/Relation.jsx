@@ -5,6 +5,8 @@ import { RiRestartLine } from 'react-icons/ri';
 import { IoIosArrowBack } from 'react-icons/io';
 import { IoIosArrowForward } from 'react-icons/io';
 import { MdFullscreen } from 'react-icons/md';
+import logo from '../../assets/hyggex.png';
+import textImg from '../../assets/text.png';
 
 const Relation = () => {
   return (
@@ -107,6 +109,15 @@ const Relation = () => {
           <div role="tabpanel" className="tab-content p-10">
             Tab content 3
           </div>
+        </div>
+      </div>
+
+      <div className="flex items-center">
+        <img className="w-[300px] h-[300px]" src={logo} alt="" />
+
+        <div>
+          <h1 className="text-xl font-bold">Published By</h1>
+          <img src={textImg} className="w-[300px] h-[80px]" alt="" />
         </div>
       </div>
     </div>
