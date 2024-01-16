@@ -6,6 +6,7 @@ import MainLayout from './Pages/MainLayout/MainLayout';
 import Home from './Pages/Home/Home';
 import AuthProvider from './Components/AuthProvider/AuthProvider';
 import Relation from './Pages/Relation/Relation';
+import Login from './Pages/Login/Login';
 
 const router = createBrowserRouter([
   {
@@ -19,6 +20,10 @@ const router = createBrowserRouter([
       {
         path: '/relation',
         element: <Relation></Relation>,
+      },
+      {
+        path: '/login',
+        element: <Login></Login>,
       },
     ],
   },
