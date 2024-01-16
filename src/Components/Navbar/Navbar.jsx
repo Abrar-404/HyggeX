@@ -20,35 +20,38 @@ const Navbar = () => {
 
   const navs = (
     <>
-      <li className="text-white">
+      <li className="text-[#2c2c2c]">
         <NavLink to="/">Home</NavLink>
       </li>
       {user ? null : (
         <>
-          <li className="text-white">
+          {/* <li className="text-[#2c2c2c]">
             <NavLink to="/login">Login</NavLink>
-          </li>
-          <li className="text-white">
+          </li> */}
+          {/* <li className="text-[#2c2c2c]">
             <NavLink to="/register">Register</NavLink>
+          </li> */}
+          <li className="text-[#2c2c2c]">
+            <NavLink to="/flashcard">Flashcard</NavLink>
           </li>
-          <li className="text-white">
-            <NavLink to="/tasks">Manage Tasks</NavLink>
+          <li className="text-[#2c2c2c]">
+            <NavLink to="/contact">Contact</NavLink>
           </li>
-          <li className="text-white">
-            <NavLink to="/dashboard">Dashboard</NavLink>
+          <li className="text-[#2c2c2c]">
+            <NavLink to="/faq">FAQ</NavLink>
           </li>
         </>
       )}
       {user && (
         <>
-          <li className="text-white">
-            <NavLink to="/createtask">Create Tasks</NavLink>
+          <li className="text-[#2c2c2c]">
+            <NavLink to="/flashcard">Flashcard</NavLink>
           </li>
-          <li className="text-white">
-            <NavLink to="/tasks">Manage Tasks</NavLink>
+          <li className="text-[#2c2c2c]">
+            <NavLink to="/contact">Contact</NavLink>
           </li>
-          <li className="text-white">
-            <NavLink to="/dashboard">Dashboard</NavLink>
+          <li className="text-[#2c2c2c]">
+            <NavLink to="/faq">FAQ</NavLink>
           </li>
         </>
       )}
@@ -57,10 +60,10 @@ const Navbar = () => {
 
   return (
     <>
-      <div className="navbar bg-[#FF2C9C] shadow-xl">
+      <div className="navbar">
         <div className="navbar-start">
           <div className="dropdown">
-            <label tabIndex={0} className="btn text-white btn-ghost lg:hidden">
+            <label tabIndex={0} className="btn text-[#2c2c2c] btn-ghost lg:hidden">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 className="h-5 w-5"
@@ -85,10 +88,10 @@ const Navbar = () => {
           </div>
           <img className="max-w-[150px] max-h-[80px]" src={logo} alt="" />
         </div>
-        <div className="navbar-center hidden lg:flex">
+        <div className="navbar-end hidden lg:flex">
           <ul className="menu menu-horizontal px-1">{navs}</ul>
         </div>
-        <div className="navbar-end">
+        <div className="">
           {user?.email ? (
             <div className="dropdown dropdown-end">
               <label tabIndex={0} className="btn btn-ghost btn-circle avatar">
@@ -123,7 +126,7 @@ const Navbar = () => {
             </div>
           ) : (
             <Link to="/login">
-              <button className="btn btn-circle border-none text-xs text-white bg-[#983BE9]">
+              <button className="rounded-full px-10 py-2 border-none text-base text-white bg-gradient-to-t from-cyan-600 to-blue-800 ">
                 Login
               </button>
             </Link>
