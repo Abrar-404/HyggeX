@@ -1,0 +1,21 @@
+/* .tabs {
+  display: flex;
+} */
+/* 
+.tab {
+  display: none;
+} */
+
+/* .tab-content {
+  display: none;
+} */
+
+.tab:checked + .tab-content {
+  display: block;
+}
+
+.tab:checked {
+  background-color: white; /* Set the background color to blue for the active tab */
+  color: #1e40af; /* Set the text color to white for better visibility */
+  font-weight: bold;
+}
