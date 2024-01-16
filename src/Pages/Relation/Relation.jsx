@@ -137,6 +137,40 @@ const Relation = () => {
           </div>
         </div>
       </div>
+
+      <div className="mt-20">
+        <h1 className="text-6xl font-bold text-blue-800">FAQ</h1>
+
+        <div className="mt-10">
+          <div className="collapse collapse-arrow border-2 border-blue-600 mb-6">
+            <input type="radio" name="my-accordion-2" />
+            <div className="collapse-title text-xl font-bold">
+              Can education flashcards be used for all age groups?
+            </div>
+            <div className="collapse-content">
+              <p>hello</p>
+            </div>
+          </div>
+          <div className="collapse collapse-arrow border-2 border-blue-600 mb-6">
+            <input type="radio" name="my-accordion-2" />
+            <div className="collapse-title text-xl font-bold">
+              How do education flashcards work?
+            </div>
+            <div className="collapse-content">
+              <p>hello</p>
+            </div>
+          </div>
+          <div className="collapse collapse-arrow bg-base-200">
+            <input type="radio" name="my-accordion-2" />
+            <div className="collapse-title text-xl font-bold">
+              Can education flashcards be used for test preparation?
+            </div>
+            <div className="collapse-content">
+              <p>hello</p>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   );
 };
